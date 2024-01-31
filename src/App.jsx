@@ -31,7 +31,7 @@ function App() {
                   </div>
               </article>
               <h2>Best verkochte tv</h2>
-              <article className={'container container-variaty'}>
+              <article className={'container-variaty'}>
                   <span className={'img-wrapper'}>
                       <img src={bestSellingTv.sourceImg} alt="mooie bestseller tv"/>
                   </span>
@@ -39,15 +39,13 @@ function App() {
                     <p>{titleProduct(bestSellingTv)}</p>
                     <p>{priceProduct(bestSellingTv)}</p>
                     <p>{size(bestSellingTv)}</p>
-                     <span className={'container-icon'}>
-                         <span className={'wrapper-icon'}>
-                             <img src="./src/assets/check.png" alt="icon check"/>
-                         </span><p>wifi</p>
+                    <div className={'container-icon'}>
+                         <span className={'wrapper-icon'}><img src="./src/assets/check.png" alt="icon check"/></span><p>wifi</p>
                          <span className={'wrapper-icon'}><img src="./src/assets/minus.png" alt="not icon"/></span><p>speech</p>
                          <span className={'wrapper-icon'}><img src="./src/assets/check.png" alt="icon check"/></span><p>hdr</p>
                          <span className={'wrapper-icon'}><img src="./src/assets/check.png" alt="icon check"/></span><p>bluetooth</p>
                          <span className={'wrapper-icon'}><img src="./src//assets/minus.png" alt="not icon"/></span><p>ambilight</p>
-                     </span>
+                    </div>
                   </div>
               </article>
               <div>

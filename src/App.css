@@ -33,6 +33,11 @@
 }
 
 .container-variaty {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
     border: 1px dashed black;
     border-radius: 5px;
     background-color: lightgray;
@@ -48,12 +53,15 @@
 }
 
 .inner-container-info {
-    display: flex;
-    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .container-icon {
-    flex-basis: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
     border: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -61,8 +69,7 @@
 
 .wrapper-icon {
     flex-basis: 20px;
-    margin: 0 auto;
-    border: 1px solid pink;
+    border: 1px solid red;
 }
 
 .wrapper-icon > img {
