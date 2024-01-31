@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.boxes {
+    margin-inline: 20px;
+    padding: 50px 50px;
+}
+
+.box1 {
+    background-color: lightgreen;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box2 {
+    background-color: lightskyblue;
+    color: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box3 {
+    background-color: indianred;
+    color: darkred;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container-variaty {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px dashed black;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.img-wrapper {
+    flex-basis: 100%;
+    padding-inline: 0 20px;
+}
+
+.img-wrapper > img {
+    width: 100%;
+}
+
+.inner-container-info {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.container-icon {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.wrapper-icon {
+    flex-basis: 20px;
+    height: 20px;
+}
+
+.wrapper-icon > img {
+    width: 100%;
+}
+
+.container-button {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
