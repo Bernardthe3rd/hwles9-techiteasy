@@ -16,6 +16,7 @@
     color: darkgreen;
     border: 1px solid darkgreen;
     border-radius: 5px;
+    text-align: center;
 }
 
 .box2 {
@@ -23,6 +24,7 @@
     color: darkblue;
     border: 1px solid darkblue;
     border-radius: 5px;
+    text-align: center;
 }
 
 .box3 {
@@ -30,6 +32,7 @@
     color: darkred;
     border: 1px solid darkred;
     border-radius: 5px;
+    text-align: center;
 }
 
 .container-variaty {
@@ -38,6 +41,7 @@
     padding: 40px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     border: 1px dashed black;
     border-radius: 5px;
     background-color: lightgray;
@@ -62,16 +66,26 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
 
 .wrapper-icon {
     flex-basis: 20px;
-    border: 1px solid red;
+    height: 20px;
 }
 
 .wrapper-icon > img {
     width: 100%;
+}
+
+.container-button {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }

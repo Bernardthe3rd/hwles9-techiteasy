@@ -9,6 +9,15 @@ import {size} from "./helpers/screensizes.js";
 
 function App() {
 
+    function logClickTextSoldy() {
+        console.log('Meest verkocht eerst')
+    }
+    function logClickTextCheap() {
+        console.log('Goedkoopst eerst')
+    }
+    function logClickTextSporty () {
+        console.log('Meest geschikt voor sport eerst')
+    }
   return (
       <>
           <header>
@@ -36,8 +45,8 @@ function App() {
                       <img src={bestSellingTv.sourceImg} alt="mooie bestseller tv"/>
                   </span>
                   <div className={'inner-container-info'}>
-                    <p>{titleProduct(bestSellingTv)}</p>
-                    <p>{priceProduct(bestSellingTv)}</p>
+                    <h2>{titleProduct(bestSellingTv)}</h2>
+                    <h2>{priceProduct(bestSellingTv)}</h2>
                     <p>{size(bestSellingTv)}</p>
                     <div className={'container-icon'}>
                          <span className={'wrapper-icon'}><img src="./src/assets/check.png" alt="icon check"/></span><p>wifi</p>
@@ -48,10 +57,11 @@ function App() {
                     </div>
                   </div>
               </article>
-              <div>
-                  <button>Meest verkocht eerst</button>
-                  <button>Goedkoopste eerst</button>
-                  <button>Meest geschikt voor sport eerst</button>
+              <h2>Alle Tv's</h2>
+              <div className={'container-button'}>
+                  <button type={'button'} onClick={logClickTextSoldy}>Meest verkocht eerst</button>
+                  <button type={'button'} onClick={logClickTextCheap}>Goedkoopste eerst</button>
+                  <button type={'button'} onClick={logClickTextSporty}>Meest geschikt voor sport eerst</button>
               </div>
           </main>
       </>
