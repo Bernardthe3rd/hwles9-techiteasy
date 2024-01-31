@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.boxes {
+    margin-inline: 20px;
+    padding: 50px 50px;
+}
+
+.box1 {
+    background-color: lightgreen;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+}
+
+.box2 {
+    background-color: lightskyblue;
+    color: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+.box3 {
+    background-color: indianred;
+    color: darkred;
+    border: 1px solid darkred;
+    border-radius: 5px;
+}
