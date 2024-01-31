@@ -31,3 +31,40 @@
     border: 1px solid darkred;
     border-radius: 5px;
 }
+
+.container-variaty {
+    border: 1px dashed black;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.img-wrapper {
+    flex-basis: 100%;
+    padding-inline: 0 20px;
+}
+
+.img-wrapper > img {
+    width: 100%;
+}
+
+.inner-container-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-icon {
+    flex-basis: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-icon {
+    flex-basis: 20px;
+    margin: 0 auto;
+    border: 1px solid pink;
+}
+
+.wrapper-icon > img {
+    width: 100%;
+}

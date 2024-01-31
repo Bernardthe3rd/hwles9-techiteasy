@@ -1,6 +1,9 @@
 import {bestSellingTv} from "../constants/inventory.js";
 import {inventory} from "../constants/inventory.js";
 
+
+
+
 export const countBoughtTv = function () {
     let totalStorage = 0;
     for (let i = 0; i < inventory.length; i++) {
@@ -8,5 +11,3 @@ export const countBoughtTv = function () {
     }
     return (totalStorage + bestSellingTv.originalStock);
 }
-
-export default countBoughtTv();
