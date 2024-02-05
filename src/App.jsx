@@ -4,15 +4,21 @@ import {titleProduct} from "./helperspt2/titlestring.js";
 import {priceProduct} from "./helperspt2/pricingtv.js";
 import {size} from "./helperspt2/sizes.js";
 import {options} from "./helperspt2/optionstv.js";
+import {mostSold} from "./helperspt2/eventlistbutton.js";
+import {cheapest} from "./helperspt2/eventlistbutton.js";
+import {sport} from "./helperspt2/eventlistbutton.js";
+
 
 function App() {
   return (
       <>
         <header>
           <h1>Alle tvs</h1>
-          <button type={'submit'}>Meest verkocht eerst</button>
-          <button type={'submit'}>Goedkoopste eerst</button>
-          <button type={'submit'}>Meest geschikt voor sport eerst</button>
+            <div className={'container-button'}>
+                <button type={'submit'} onClick={mostSold}>Meest verkocht eerst</button>
+                <button type={'submit'} onClick={cheapest}>Goedkoopste eerst</button>
+                <button type={'submit'} onClick={sport}>Meest geschikt voor sport eerst</button>
+            </div>
         </header>
           <main>
               <ul>
@@ -27,11 +33,7 @@ function App() {
                                 <h2>{priceProduct(tv)}</h2>
                                 <p>{size(tv)}</p>
                                 <ul>
-                                    <li key={tv.type}>{options(tv)}</li>
-                                    <li key={tv.type}>{options(tv)}</li>
-                                    <li key={tv.type}>{options(tv)}</li>
-                                    <li key={tv.type}>{options(tv)}</li>
-                                    <li key={tv.type}>{options(tv)}</li>
+                                    <li key={1}>{options(tv)}</li>
                                 </ul>
                             </div>
                           </article>
