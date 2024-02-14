@@ -1,0 +1,1 @@
+export const priceProduct = (object) => '€'+ object.price+',-';
