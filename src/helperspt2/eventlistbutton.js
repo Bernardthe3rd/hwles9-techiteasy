@@ -16,6 +16,13 @@ export function mostSold() {
     console.log(string)
 }
 
+//korter alternatief
+//     let newSortTwo = inventory.sort((a,b) => {
+//         return b.sold - a.sold
+//     })
+//     console.log(newSortTwo)
+
+
 export function cheapest() {
     let newSort = inventory.sort((a,b) => {
         if (a.price < b.price) {

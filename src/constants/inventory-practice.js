@@ -30,6 +30,12 @@ const listSport = inventory.map((tv) => {
 });
 console.log(listSport);
 
+//hieronder is de verkorte versie en toch officieel makkelijker:
+let listSports = inventory.map((tv) => {
+    return {name: tv.name, suitable: tv.refreshRate >= 100}
+})
+console.log(listSports);
+
 // Opdracht 1e (uitdaging): Gebruik array-methoden om alle informatie te verzamelen van de tv's die beschikbaar zijn in schermgroottes van 65 inch en groter.
 // const findSize = inventory.filter((tvs) => {
 //     return tvs.availableSizes.find((tv) => {return tv.availableSizes = 65})
@@ -42,3 +48,5 @@ const ambilight = inventory.filter((tv) => {
     return list.applicable === true
 })
 console.log(ambilight);
+
+// voorstel was om met .some methode te werken. Kan altijd nog onderzoeken wat dit precies doet.
